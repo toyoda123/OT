@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        OT
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <form action="">
+            <h1>Overtime Approval Request</h1>
+            <label for="">Name</label>
+            <input type="text" name="name" id="name">
+            <button type="button" onclick="sendwhatsapp();">Send</button>
+        </form>
+
+        <a href="https://wa.me/+60193893074?text=hi">Whatsapp</a>
+
+        <script>
+            function sendwhatsapp(){
+                var phonenumber = (+60193893074)
+
+                var name = document.querySelector('.name').value;
+
+                var url = "https://wa.me/" + phonenumber + "?text="
+                +"*Name : " +name;
+
+                window.open(url, '_blank').focus();
+            }
+        </script>
+    </body>
+</html>
